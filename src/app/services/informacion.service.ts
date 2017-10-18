@@ -23,7 +23,7 @@ export class InformacionService {
   }
   public loadAbout() {
     this.http.get('https://portafolio-1059e.firebaseio.com/equipo.json').subscribe( data => {
-      console.log(data.json());
+      // console.log(data.json());
       this.infoAboutCargada = true;
       this.equipo = data.json();
     });

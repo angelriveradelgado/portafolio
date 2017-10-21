@@ -25,5 +25,9 @@ export class ProductosService {
       });
   }
 
+  public cargarProducto( cod: String) {
+    return this.http.get('https://portafolio-1059e.firebaseio.com/producto/' + cod + '.json');
+    // return this.http.get(`https://portafolio-1059e.firebaseio.com/producto/${ cod }.json`);
+  }
 
 }
